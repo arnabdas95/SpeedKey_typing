@@ -11,6 +11,8 @@
     --card-bottom-color:#46d5eeb0;
     --card-bck:white;
     --box-shadow-color:#184d5796;
+    --tips-bck:url("img/tips.png");
+    --tips-box-color:whitesmoke;
     --ref-box-color:rgb(0, 0, 0);
     --result-bck-color:#dae6ff;
     --current-green:rgb(149, 231, 149);
@@ -47,6 +49,8 @@ body{
     --card-bottom-color:#366bb1b0;
     --card-bck:rgb(39, 39, 39);
     --box-shadow-color:#204e79ab;
+    --tips-bck:url("img/tips-dark.png");
+    --tips-box-color:rgb(38, 47, 49);
     --ref-box-color:rgb(255, 255, 255);
     --result-bck-color:#13161f;
     --current-green:rgb(43, 92, 43);
@@ -138,6 +142,49 @@ color:  var(--heading-info-text-color);
     transform: scale(1.1);
     color: var( --card-bottom-color);
     transition: .6s ease-in-out;
+}
+
+#tips{
+   margin-top:100px;
+   margin-bottom: 10px;;
+}
+
+
+.heading-tips{
+    text-align: center;
+    padding:10px;
+    margin-right:3vw;
+    margin-left:3vw;
+    background-color: var(--heading-info-color);
+    border-radius: 7px;
+    border-bottom: 4px solid var(--heading-info-border-color);
+    color:  var(--heading-info-text-color);
+    }
+
+.tips_row{
+    margin-top: 10px;
+    background-image: var(--tips-bck);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+}
+.tips_row div{
+    width:20rem;
+    height:320px;
+    border-bottom:5px solid var( --card-bottom-color);
+    border-top:5px solid var( --card-bottom-color);
+    margin:10px;
+   background-color: var( --tips-box-color)  ;
+    color: var(--main-text-color);   
+    text-align: center;
+    padding:10px;
+    border-radius: 10px;
 }
 
 
@@ -255,12 +302,6 @@ footer{
 }
 
 
-    #new{
-        
-        
-    }
-    
-      
 
 
     
