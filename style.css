@@ -36,8 +36,8 @@ body{
 
 .dark-mode {
     
-    
-      background-color:rgb(17, 18, 19);
+    --main-background-color:rgb(17, 18, 19);
+      background-color:var( --main-background-color);
     --main-text-color:rgb(216, 216, 216);
     --main-heading-color:#fcf876;
     --land-scroll-color:rgb(219, 241, 255);
@@ -302,7 +302,9 @@ footer{
 }
 
 
-
+span{
+    color:red;
+}
 
     
 /*

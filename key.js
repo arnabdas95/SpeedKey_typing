@@ -101,8 +101,22 @@ function logKey(e) {
        
         
         if (kPressed == currentLetter) {
+
+           
+             //Split it into two substr for change the color
+             str = referenceText;
+             var str1 = str.substr(0,i+1);  
+             var str2 = str.substr(i+1,referenceText.length);
+             console.log(str2);
+             var str1 = str1.split("<br>").map(function(val){
+              return str1.replace(/(\S)/g, "<span>$1</span>");
+                 });
+                  refText.innerHTML=str1+str2; 
+
             i++;
-            word.textContent = ` ${kPressed}`;
+            if(` ${e.keyCode}`==32){word.textContent = '___________'}
+            else{ word.textContent = ` ${kPressed}`;}
+           
             log.textContent += ` ${kPressed}`;
 
         } 
